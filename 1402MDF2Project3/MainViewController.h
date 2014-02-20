@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ImageViewController.h"
+#import "VideoViewController.h"
 
 @interface MainViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 

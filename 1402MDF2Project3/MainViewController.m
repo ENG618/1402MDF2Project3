@@ -28,7 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-# pragma # mark Buttons
+# pragma mark - Buttons
 
 - (IBAction)photoButton:(id)sender
 {
@@ -73,7 +73,7 @@
     } 
 }
 
-#pragma # mark Picker controll
+#pragma mark - Picker Controll
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {

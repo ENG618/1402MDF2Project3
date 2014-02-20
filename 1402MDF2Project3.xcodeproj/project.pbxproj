@@ -23,6 +23,7 @@
 		5C1466E018B44AFA00989111 /* _402MDF2Project3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1466DF18B44AFA00989111 /* _402MDF2Project3Tests.m */; };
 		5C1466EB18B45C0400989111 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1466EA18B45C0400989111 /* ImageViewController.m */; };
 		5C1466EE18B45C1A00989111 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1466ED18B45C1A00989111 /* MainViewController.m */; };
+		5C1466F118B61F6900989111 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1466F018B61F6900989111 /* VideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		5C1466EA18B45C0400989111 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		5C1466EC18B45C1A00989111 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		5C1466ED18B45C1A00989111 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5C1466EF18B61F6900989111 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		5C1466F018B61F6900989111 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +124,7 @@
 				5C1466C118B44AFA00989111 /* AppDelegate.m */,
 				5C1466C318B44AFA00989111 /* Main_iPhone.storyboard */,
 				5C1466C618B44AFA00989111 /* Main_iPad.storyboard */,
-				5C1466EC18B45C1A00989111 /* MainViewController.h */,
-				5C1466ED18B45C1A00989111 /* MainViewController.m */,
-				5C1466E918B45C0400989111 /* ImageViewController.h */,
-				5C1466EA18B45C0400989111 /* ImageViewController.m */,
+				5C1466F218B61F7D00989111 /* Views */,
 				5C1466CC18B44AFA00989111 /* Images.xcassets */,
 				5C1466B818B44AFA00989111 /* Supporting Files */,
 			);
@@ -158,6 +158,19 @@
 				5C1466DC18B44AFA00989111 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C1466F218B61F7D00989111 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C1466EC18B45C1A00989111 /* MainViewController.h */,
+				5C1466ED18B45C1A00989111 /* MainViewController.m */,
+				5C1466E918B45C0400989111 /* ImageViewController.h */,
+				5C1466EA18B45C0400989111 /* ImageViewController.m */,
+				5C1466EF18B61F6900989111 /* VideoViewController.h */,
+				5C1466F018B61F6900989111 /* VideoViewController.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1466F118B61F6900989111 /* VideoViewController.m in Sources */,
 				5C1466C218B44AFA00989111 /* AppDelegate.m in Sources */,
 				5C1466EB18B45C0400989111 /* ImageViewController.m in Sources */,
 				5C1466EE18B45C1A00989111 /* MainViewController.m in Sources */,
