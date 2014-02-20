@@ -9,6 +9,8 @@
 #import "ImageViewController.h"
 
 @interface ImageViewController ()
+@property (strong, nonatomic) IBOutlet UIImageView *originalImage;
+@property (strong, nonatomic) IBOutlet UIImageView *scaledImage;
 
 @end
 
