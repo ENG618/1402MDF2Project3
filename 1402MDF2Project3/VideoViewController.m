@@ -23,7 +23,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    
+    NSLog(@"viewDidAppear, and vidio info is: %@", [videoInfo description]);
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,11 +72,11 @@
 {
     [self showSavingAlert];
     NSURL *urlString = [videoInfo valueForKey:UIImagePickerControllerMediaURL];
-    if (urlString) {
+    if (urlString != nil) {
         NSString *videoPath = [urlString path];
         NSLog(@"The url path is: %@", videoPath);
         //Save video
-        UISaveVideoAtPathToSavedPhotosAlbum(videoPath, self, @selector(video:didFinishSavingWithError:ContextInfo:), nil);
+        UISaveVideoAtPathToSavedPhotosAlbum(videoPath, self, @selector(video:didFinishSavingWithError:contextInfo:), nil);
     }
 }
 

@@ -85,6 +85,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     if ([[info objectForKey:UIImagePickerControllerMediaType] isEqual: @"public.image"]) {
+        //Set Variable
         imageInfo = info;
         //Dismess pickerView
         [picker dismissViewControllerAnimated:YES completion:^(void){
@@ -94,6 +95,8 @@
         
         
     }else if ([[info objectForKey:UIImagePickerControllerMediaType]  isEqual: @"public.movie"]){
+        //Set variable
+        videoInfo = info;
         //Obtain url for video
         NSURL *urlString = [info valueForKey:UIImagePickerControllerMediaURL];
         if (urlString) {
@@ -108,10 +111,7 @@
         }
     }
     
-    //In case there is no other type called, this will dismiss picker control
-    [picker dismissViewControllerAnimated:YES completion:nil];
-    
-    NSLog(@"Image has been selected...Image info: %@ ... Description: %@", info, [info description]);
+    NSLog(@"Image has been selected...Image info: %@", [info description]);
 }
 
 #pragma mark - Navigation
