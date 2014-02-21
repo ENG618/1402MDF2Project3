@@ -16,86 +16,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boA-sm-4Yo">
-                                <rect key="frame" x="20" y="20" width="55" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boA-sm-4Yo">
+                                <rect key="frame" x="20" y="49" width="281" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Capture">
-                                    <color key="titleColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5pJ-iB-Yb5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="    Capture Image" image="EasyCapture-Icon_image.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="photoButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FR7-t1-Grt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haC-8j-K3v">
-                                <rect key="frame" x="202" y="20" width="98" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haC-8j-K3v">
+                                <rect key="frame" x="20" y="157" width="281" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Video Capture">
-                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4G5-kZ-5U8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="    Capture Video" image="EasyCapture-Icon_video.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="videoButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="B36-K8-LEw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSi-lL-JYt">
-                                <rect key="frame" x="116" y="372" width="89" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSi-lL-JYt">
+                                <rect key="frame" x="20" y="265" width="281" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Photo Album">
-                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="    Photo Album" image="EasyCapture-Icon_album.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="albumButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cZq-8d-SxV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions: go here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDe-d1-xIp">
-                                <rect key="frame" x="20" y="410" width="280" height="138"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click one of the icons above to snap a photo, video, or view and album of saved photos on your device." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="281" translatesAutoresizingMaskIntoConstraints="NO" id="FDe-d1-xIp">
+                                <rect key="frame" x="20" y="373" width="281" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="138" id="opm-pz-Wl3"/>
+                                    <constraint firstAttribute="height" constant="95" id="aER-QF-XLJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kT8-Si-0j8">
-                                <rect key="frame" x="40" y="58" width="241" height="140"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easy Capture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AP-J9-IxL">
+                                <rect key="frame" x="20" y="20" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="iGO-h2-LMg"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kOZ-tD-9wp">
-                                <rect key="frame" x="40" y="224" width="241" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FDe-d1-xIp" firstAttribute="centerX" secondItem="CSi-lL-JYt" secondAttribute="centerX" id="B44-vm-2Sg"/>
-                            <constraint firstItem="kT8-Si-0j8" firstAttribute="top" secondItem="boA-sm-4Yo" secondAttribute="bottom" constant="8" symbolic="YES" id="Ctq-vh-UI9"/>
-                            <constraint firstItem="kT8-Si-0j8" firstAttribute="leading" secondItem="kOZ-tD-9wp" secondAttribute="leading" id="DL3-ep-401"/>
-                            <constraint firstItem="boA-sm-4Yo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="K4G-Hr-UBs"/>
-                            <constraint firstItem="haC-8j-K3v" firstAttribute="baseline" secondItem="boA-sm-4Yo" secondAttribute="baseline" id="M4k-GS-3qv"/>
-                            <constraint firstItem="FDe-d1-xIp" firstAttribute="top" secondItem="CSi-lL-JYt" secondAttribute="bottom" constant="8" symbolic="YES" id="Ozx-jg-dGJ"/>
-                            <constraint firstItem="boA-sm-4Yo" firstAttribute="leading" secondItem="FDe-d1-xIp" secondAttribute="leading" id="S8C-22-L33"/>
-                            <constraint firstItem="CSi-lL-JYt" firstAttribute="top" secondItem="kOZ-tD-9wp" secondAttribute="bottom" constant="8" symbolic="YES" id="VKb-8P-gkc"/>
-                            <constraint firstItem="kOZ-tD-9wp" firstAttribute="trailing" secondItem="kT8-Si-0j8" secondAttribute="trailing" id="gFQ-Qu-1yy"/>
-                            <constraint firstAttribute="bottom" secondItem="FDe-d1-xIp" secondAttribute="bottom" constant="20" symbolic="YES" id="nv0-oF-hWb"/>
-                            <constraint firstItem="boA-sm-4Yo" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="r0i-TU-ME2"/>
-                            <constraint firstItem="kT8-Si-0j8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="rCE-lA-VAW"/>
-                            <constraint firstItem="kOZ-tD-9wp" firstAttribute="top" secondItem="kT8-Si-0j8" secondAttribute="bottom" constant="26" id="sWN-3P-T0i"/>
-                            <constraint firstAttribute="trailing" secondItem="haC-8j-K3v" secondAttribute="trailing" constant="20" symbolic="YES" id="t0S-ne-uh7"/>
-                            <constraint firstItem="CSi-lL-JYt" firstAttribute="centerX" secondItem="kOZ-tD-9wp" secondAttribute="centerX" id="wzP-MK-RA6"/>
-                            <constraint firstItem="FDe-d1-xIp" firstAttribute="trailing" secondItem="haC-8j-K3v" secondAttribute="trailing" id="xIw-4L-vRG"/>
+                            <constraint firstItem="haC-8j-K3v" firstAttribute="leading" secondItem="boA-sm-4Yo" secondAttribute="leading" id="1c0-lL-fjS"/>
+                            <constraint firstItem="YPv-R2-0bn" firstAttribute="top" secondItem="FDe-d1-xIp" secondAttribute="bottom" constant="100" id="20O-ue-5vc"/>
+                            <constraint firstItem="FDe-d1-xIp" firstAttribute="top" secondItem="CSi-lL-JYt" secondAttribute="bottom" constant="8" symbolic="YES" id="78j-2r-mlw"/>
+                            <constraint firstItem="FDe-d1-xIp" firstAttribute="leading" secondItem="CSi-lL-JYt" secondAttribute="leading" id="Fon-AC-q57"/>
+                            <constraint firstItem="haC-8j-K3v" firstAttribute="trailing" secondItem="CSi-lL-JYt" secondAttribute="trailing" id="IhE-JT-7ps"/>
+                            <constraint firstItem="boA-sm-4Yo" firstAttribute="top" secondItem="1AP-J9-IxL" secondAttribute="bottom" constant="8" symbolic="YES" id="JOP-O7-Uwf"/>
+                            <constraint firstItem="CSi-lL-JYt" firstAttribute="leading" secondItem="haC-8j-K3v" secondAttribute="leading" id="NcB-8Y-5gz"/>
+                            <constraint firstItem="FDe-d1-xIp" firstAttribute="trailing" secondItem="CSi-lL-JYt" secondAttribute="trailing" id="RZA-tT-kJa"/>
+                            <constraint firstItem="haC-8j-K3v" firstAttribute="top" secondItem="boA-sm-4Yo" secondAttribute="bottom" constant="8" symbolic="YES" id="WtK-nN-4ph"/>
+                            <constraint firstItem="1AP-J9-IxL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="Xor-yw-4Uq"/>
+                            <constraint firstItem="1AP-J9-IxL" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="c8p-Ld-qeb"/>
+                            <constraint firstItem="boA-sm-4Yo" firstAttribute="leading" secondItem="1AP-J9-IxL" secondAttribute="leading" id="eEw-sE-ckO"/>
+                            <constraint firstItem="boA-sm-4Yo" firstAttribute="centerX" secondItem="1AP-J9-IxL" secondAttribute="centerX" id="lYT-aE-cUT"/>
+                            <constraint firstItem="CSi-lL-JYt" firstAttribute="top" secondItem="haC-8j-K3v" secondAttribute="bottom" constant="8" symbolic="YES" id="oeA-NH-mwg"/>
+                            <constraint firstItem="boA-sm-4Yo" firstAttribute="trailing" secondItem="haC-8j-K3v" secondAttribute="trailing" id="vXh-53-977"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="photoImageView" destination="kT8-Si-0j8" id="0wH-He-1mI"/>
-                        <outlet property="scaledImageView" destination="kOZ-tD-9wp" id="gD8-r1-SHf"/>
-                        <segue destination="2nb-ja-RRl" kind="modal" identifier="imageSegue" modalTransitionStyle="flipHorizontal" id="DrN-v1-KOG"/>
                         <segue destination="NrL-wi-Mz1" kind="modal" identifier="videoSegue" modalTransitionStyle="flipHorizontal" id="rf6-dr-QUf"/>
+                        <segue destination="2nb-ja-RRl" kind="modal" identifier="imageSegue" modalTransitionStyle="flipHorizontal" id="p3n-qb-N2f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -114,7 +116,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cXw-yX-zFB">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXw-yX-zFB">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
@@ -125,6 +127,11 @@
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cXw-yX-zFB" secondAttribute="bottom" id="A2w-YR-pAH"/>
+                            <constraint firstAttribute="trailing" secondItem="cXw-yX-zFB" secondAttribute="trailing" id="Qrg-k6-gkh"/>
+                            <constraint firstItem="cXw-yX-zFB" firstAttribute="leading" secondItem="lBd-Bt-YEg" secondAttribute="leading" id="zyz-L9-Rei"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NgC-N0-B3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -134,7 +141,7 @@
         <!--Image View Controller-->
         <scene sceneID="Kdk-V4-gS9">
             <objects>
-                <viewController storyboardIdentifier="ImageView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2nb-ja-RRl" customClass="ImageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2nb-ja-RRl" customClass="ImageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZfN-35-cpY"/>
                         <viewControllerLayoutGuide type="bottom" id="7Xj-Fi-Q3W"/>
@@ -147,14 +154,14 @@
                                 <rect key="frame" x="131" y="20" width="59" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scaled" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25n-jE-M3I">
                                 <rect key="frame" x="134" y="247" width="53" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IjP-7U-8jR">
@@ -214,6 +221,11 @@
             <point key="canvasLocation" x="854" y="-290"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="EasyCapture-Icon_album.png" width="78" height="70"/>
+        <image name="EasyCapture-Icon_image.png" width="78" height="69"/>
+        <image name="EasyCapture-Icon_video.png" width="80" height="95"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

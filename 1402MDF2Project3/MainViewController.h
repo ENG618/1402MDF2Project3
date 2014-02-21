@@ -13,4 +13,7 @@
 
 @interface MainViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
+@property (nonatomic) NSDictionary *imageInfo;
+@property (nonatomic) NSDictionary *videoInfo;
+
 @end

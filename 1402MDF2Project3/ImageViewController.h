@@ -10,4 +10,8 @@
 
 @interface ImageViewController : UIViewController
 
+@property (nonatomic) NSDictionary *imageInfo;
+@property (nonatomic) UIImage *originalImg;
+@property (nonatomic) UIImage *scaledImg;
+
 @end
