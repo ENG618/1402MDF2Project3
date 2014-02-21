@@ -24,6 +24,17 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     NSLog(@"viewDidAppear, and vidio info is: %@", [videoInfo description]);
+    
+//    //Show video
+//    NSURL *urlString = [videoInfo valueForKey:UIImagePickerControllerMediaURL];
+//    if (urlString) {
+//        NSString *videoPath = [urlString path];
+//        player =  [[MPMoviePlayerController alloc] initWithContentURL:[NSURL URLWithString:videoPath]];
+//        [player prepareToPlay];
+//        //[player.view setFrame:self.view.bounds];
+//        //[[player view] setFrame:CGRectMake(50, 50, 200, 200)];]
+//        [self.view addSubview:[player view]];
+//    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -78,6 +89,16 @@
         //Save video
         UISaveVideoAtPathToSavedPhotosAlbum(videoPath, self, @selector(video:didFinishSavingWithError:contextInfo:), nil);
     }
+}
+
+- (IBAction)playButton:(id)sender
+{
+    [player play];
+}
+
+- (IBAction)stopButton:(id)sender
+{
+    
 }
 
 @end

@@ -28,6 +28,7 @@
 		5C14670518B7086700989111 /* EasyCapture-Icon_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C14670218B7086700989111 /* EasyCapture-Icon_image.png */; };
 		5C14670618B7086700989111 /* EasyCapture-Icon_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C14670318B7086700989111 /* EasyCapture-Icon_video.png */; };
 		5C14670918B7190100989111 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C14670818B7190100989111 /* VideoViewController.m */; };
+		5C1E753B18B72A5D008D8F0B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1E753A18B72A5D008D8F0B /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		5C14670318B7086700989111 /* EasyCapture-Icon_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EasyCapture-Icon_video.png"; sourceTree = "<group>"; };
 		5C14670718B7190100989111 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		5C14670818B7190100989111 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		5C1E753A18B72A5D008D8F0B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1E753B18B72A5D008D8F0B /* MediaPlayer.framework in Frameworks */,
 				5C1466F718B630D800989111 /* MobileCoreServices.framework in Frameworks */,
 				5C1466B418B44AFA00989111 /* CoreGraphics.framework in Frameworks */,
 				5C1466B618B44AFA00989111 /* UIKit.framework in Frameworks */,
@@ -118,6 +121,7 @@
 		5C1466B018B44AFA00989111 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C1E753A18B72A5D008D8F0B /* MediaPlayer.framework */,
 				5C1466F618B630D800989111 /* MobileCoreServices.framework */,
 				5C1466B118B44AFA00989111 /* Foundation.framework */,
 				5C1466B318B44AFA00989111 /* CoreGraphics.framework */,
@@ -134,9 +138,7 @@
 				5C1466C118B44AFA00989111 /* AppDelegate.m */,
 				5C1466C318B44AFA00989111 /* Main_iPhone.storyboard */,
 				5C1466C618B44AFA00989111 /* Main_iPad.storyboard */,
-				5C14670118B7086700989111 /* EasyCapture-Icon_album.png */,
-				5C14670218B7086700989111 /* EasyCapture-Icon_image.png */,
-				5C14670318B7086700989111 /* EasyCapture-Icon_video.png */,
+				5C1E753C18B73359008D8F0B /* Images */,
 				5C1466F218B61F7D00989111 /* Views */,
 				5C1466CC18B44AFA00989111 /* Images.xcassets */,
 				5C1466B818B44AFA00989111 /* Supporting Files */,
@@ -184,6 +186,16 @@
 				5C14670818B7190100989111 /* VideoViewController.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		5C1E753C18B73359008D8F0B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5C14670118B7086700989111 /* EasyCapture-Icon_album.png */,
+				5C14670218B7086700989111 /* EasyCapture-Icon_image.png */,
+				5C14670318B7086700989111 /* EasyCapture-Icon_video.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +524,7 @@
 				5C1466E518B44AFA00989111 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C1466E618B44AFA00989111 /* Build configuration list for PBXNativeTarget "1402MDF2Project3Tests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +533,7 @@
 				5C1466E818B44AFA00989111 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

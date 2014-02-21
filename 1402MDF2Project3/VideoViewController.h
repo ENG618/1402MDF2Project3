@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface VideoViewController : UIViewController
 {
     UIAlertView *saving;
+    MPMoviePlayerController *player;
 }
 
 @property (nonatomic) NSDictionary *videoInfo;
