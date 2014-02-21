@@ -41,20 +41,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)               image: (UIImage *) image
-    didFinishSavingWithError: (NSError *) error
-                 contextInfo: (void *) contextInfo
+- (void)image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
 {
     if (error != nil) {
         NSLog(@"Error: %@", [error description]);
     }else{
-        UIAlertView *saveSuccess = [[UIAlertView alloc] initWithTitle:@"Success"
-                                                              message:@"Both images were saved!"
-                                                             delegate:nil
-                                                    cancelButtonTitle:nil
-                                                    otherButtonTitles:@"Okay", nil];
-        [saveSuccess show];
+
         NSLog(@"Save was successful");
+        [self dismissViewControllerAnimated:YES completion:^(void){
+            //Alert user videos saved successfully 
+            UIAlertView *saveSuccess = [[UIAlertView alloc] initWithTitle:@"Success"
+                                                                  message:@"Both images were saved!"
+                                                                 delegate:nil
+                                                        cancelButtonTitle:nil
+                                                        otherButtonTitles:@"Okay", nil];
+            [saveSuccess show];
+        }];
     }
 }
 

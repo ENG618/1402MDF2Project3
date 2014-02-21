@@ -96,47 +96,58 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="NrL-wi-Mz1" kind="modal" identifier="videoSegue" modalTransitionStyle="flipHorizontal" id="rf6-dr-QUf"/>
                         <segue destination="2nb-ja-RRl" kind="modal" identifier="imageSegue" modalTransitionStyle="flipHorizontal" id="p3n-qb-N2f"/>
+                        <segue destination="9S1-4s-E81" kind="modal" identifier="videoSegue" modalTransitionStyle="flipHorizontal" id="Q8D-ug-FJ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="242" y="62"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Dbc-HY-XyS">
+        <!--Video View Controller-->
+        <scene sceneID="Eb2-Tr-G4C">
             <objects>
-                <viewController id="NrL-wi-Mz1" sceneMemberID="viewController">
+                <viewController id="9S1-4s-E81" customClass="VideoViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yZt-QW-Zar"/>
-                        <viewControllerLayoutGuide type="bottom" id="nAo-4w-laO"/>
+                        <viewControllerLayoutGuide type="top" id="3KE-8Y-fuG"/>
+                        <viewControllerLayoutGuide type="bottom" id="BMt-Fp-HZ3"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lBd-Bt-YEg">
+                    <view key="view" contentMode="scaleToFill" id="5BA-Fy-puS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXw-yX-zFB">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4c6-zy-Hir">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem systemItem="cancel" id="FIu-CI-3J8"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="itw-j6-Eu2"/>
-                                    <barButtonItem systemItem="save" id="z3J-YX-18p"/>
+                                    <barButtonItem title="Item" systemItem="cancel" id="X2E-B1-dIO">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="9S1-4s-E81" id="wgc-0X-H8M"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OhW-r0-Lz3"/>
+                                    <barButtonItem systemItem="save" id="XCZ-qd-obb">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="saveButton:" destination="9S1-4s-E81" id="HpE-k0-gUF"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="cXw-yX-zFB" secondAttribute="bottom" id="A2w-YR-pAH"/>
-                            <constraint firstAttribute="trailing" secondItem="cXw-yX-zFB" secondAttribute="trailing" id="Qrg-k6-gkh"/>
-                            <constraint firstItem="cXw-yX-zFB" firstAttribute="leading" secondItem="lBd-Bt-YEg" secondAttribute="leading" id="zyz-L9-Rei"/>
+                            <constraint firstItem="4c6-zy-Hir" firstAttribute="leading" secondItem="5BA-Fy-puS" secondAttribute="leading" id="TrD-bE-Zfz"/>
+                            <constraint firstAttribute="bottom" secondItem="4c6-zy-Hir" secondAttribute="bottom" id="vMA-Ov-WkE"/>
+                            <constraint firstAttribute="trailing" secondItem="4c6-zy-Hir" secondAttribute="trailing" id="vdq-f3-314"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NgC-N0-B3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3R-ri-CqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854" y="375"/>
+            <point key="canvasLocation" x="854" y="389"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="Kdk-V4-gS9">
@@ -180,17 +191,20 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem systemItem="cancel" id="eqj-rV-qy0">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="cancelButton:" destination="2nb-ja-RRl" id="638-Tg-d4g"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="zjH-bZ-Hw2"/>
                                     <barButtonItem systemItem="save" id="eVg-uH-umE">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="saveButton:" destination="2nb-ja-RRl" id="Kp2-Hc-zav"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
